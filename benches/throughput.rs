@@ -1,5 +1,5 @@
 use criterion::{criterion_group, criterion_main, Criterion, Throughput};
-use collatz_weyl::collatz::{CollatzWeyl128, CollatzWeyl128_64, CollatzWeyl64};
+use collatz_weyl::{CollatzWeyl128, CollatzWeyl128_64, CollatzWeyl64};
 
 fn bench_rng(c: &mut Criterion) {
     let mut group = c.benchmark_group("collatz_weyl");
