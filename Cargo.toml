@@ -7,7 +7,7 @@ edition = "2024"
 rand-core = ["rand_core"]
 
 [dependencies]
-rand_core = {version = "0.10.0", optional = true}
+rand_core = {version = "0.10.1", optional = true}
 
 [dev-dependencies]
 criterion = "0.8.2"
