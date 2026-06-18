@@ -40,11 +40,11 @@ impl TryRng for CollatzWeyl64 {
     type Error = Infallible;
 
     fn try_next_u32(&mut self) -> Result<u32, Self::Error> {
-        Ok(self.next_u32())
+        Ok(self.next() as u32)
     }
 
     fn try_next_u64(&mut self) -> Result<u64, Self::Error> {
-        Ok(self.next_u64())
+        Ok(self.next())
     }
 
     fn try_fill_bytes(&mut self, dest: &mut [u8]) -> Result<(), Self::Error> {
@@ -112,11 +112,11 @@ impl TryRng for CollatzWeyl128_64 {
     type Error = Infallible;
 
     fn try_next_u32(&mut self) -> Result<u32, Self::Error> {
-        Ok(self.next_u32())
+        Ok(self.next() as u32)
     }
 
     fn try_next_u64(&mut self) -> Result<u64, Self::Error> {
-        Ok(self.next_u64())
+        Ok(self.next() as u64)
     }
 
     fn try_fill_bytes(&mut self, dest: &mut [u8]) -> Result<(), Self::Error> {
@@ -179,11 +179,11 @@ impl TryRng for CollatzWeyl128 {
     type Error = Infallible;
 
     fn try_next_u32(&mut self) -> Result<u32, Self::Error> {
-        Ok(self.next_u32())
+        Ok(self.next() as u32)
     }
 
     fn try_next_u64(&mut self) -> Result<u64, Self::Error> {
-        Ok(self.next_u64())
+        Ok(self.next() as u64)
     }
 
     fn try_fill_bytes(&mut self, dest: &mut [u8]) -> Result<(), Self::Error> {
